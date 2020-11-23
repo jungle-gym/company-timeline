@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+body{
+  padding:0;
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333
+}
+h1{
+  font-size:26px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 32.5px;
+  text-align:center;
+}
+
+.content p {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 23.8px;
+}
+
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+/* .timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+} */
+.timeline ul li{
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+/* .timeline ul li:before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background: #E6EAE2;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #E6EAE2;
+} */
+.timeline ul li:before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background: #E6EAE2;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #E6EAE2;
+}
+
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+/* .timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+  color:#333;
+} */
+.timeline ul li .time
+{ font-size: 18px;
+  position:absolute;
+  top:12px;
+  left:-425px;
+  margin:0;
+  padding:8px 16px;
+  color:#333;
+  border-radius:18px;
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+
+.timeline-img {
+  max-width: 405px;
+
+}
+</style>
+
+
+<!-- partial:index.partial.html -->
+<body>
+  <h1>A historical timeline</h1>
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="content">
+          <div class="time">
+            <img loading="lazy" class="timeline-img" style="max-width: 350px;" src="./img/Vintage-Images (1).jpg" alt="Wooden tower with two swings in white background">
+          </div>
+          <h3>1951</h3>
+          <p>Creative Playthings Ltd. USA, was founded in 1951.</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="content">
+          <h3>1969</h3>
+          <p>Introduction of wooden outdoor Jungle Gym climbing frames.</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="content">
+          <h3>1985</h3>
+          <p>Partnered with Toys 'R Us and launch of the product line / second brand "The Original Jungle Gym"</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/1988-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1988</h3>
+          <p>The European branch was established, a joint venture with Dutch importer PWC international B.V.. Importing the first square dimensional, pressure treated pine climbing frames for backyards. With Swings, blue canvas, platform 125, wooden slide, beams as uprights</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" style="margin-top:-30px;" src="./img/1990-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1990</h3>
+          <p>The European branch was established, a joint venture with Dutch importer PWC international B.V.. Importing the first square dimensional, pressure treated pine climbing frames for backyards. With Swings, blue canvas, platform 125, wooden slide, beams as uprights</p>
+        </div>
+        <div class="time">
+      </li>
+      
+      <li>
+        <div class="content">
+          <div class="time">
+            <img loading="lazy" class="timeline-img" style="margin-top: -50px; max-width: 300px;" src="./img/sheet 1-3ofthem (2).png" alt="Wooden tower with two swings in white background">
+          </div>
+          <h3>1990</h3>
+          <p>Introduction of robuster climbing frames with posts as uprights, and 145 cm playdeck; Classic Swing, Maverick, Outpost Tower and its unique A-frame modular swing concept.</p>
+        </div>
+        <br>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/Stand Glee 2003 - 06.jpg" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1991</h3>
+          <p>First participation on International trade shows like SPOGA+GAFA in Koln, Germany and VTB in Utrecht, Netherlands</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/1992_CPL_Blue_Canvas_Discovery_Blue_wave_Slide-page-001.jpg" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1992</h3>
+          <p>Introduction of the Eclipse with yellow plastic safety handles.</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/2001 Jugle Gym 1m schap presenation-page-001 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1993</h3>
+          <p>Introduction of the Eclipse with yellow plastic safety handles.</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/cartrack.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1997</h3>
+          <p>Introduction of attachment slide with car track.</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/Screenshot from 2020-09-28 16-05-44 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1998</h3>
+          <p>Introduction of patented A-frame brackets</p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/1999-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>1999</h3>
+          <p>Launched new products: Jungle Swing, Jungle Climber, Jungle Tower, Jungle Hut and Swing Module</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/JG Website 2000 - Google Drive 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2000</h3>
+          <p>Jungle Gym goes online & releases Jungle Villa, Lodge, Cabin, Castle, Peak</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/2003-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2003</h3>
+          <p>Dedicated to using FSC / PEFC certified sustainable timber</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/logo_Hy-land 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2004</h3>
+          <p>Introduction of our Commercial Playgrounds on the SPOGA/GAFA in Germany. B2B customer base.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/glee 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2004</h3>
+          <p>Appearance as an exhibitor at UK’s premier garden tradeshow: Glee</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>2005</h3>
+          <p>We obtained our TUV/BA certificate for the entire product line. Kits without the timber.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/2007-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2007</h3>
+          <p>Partnered with some of the biggest renowned and acclaimed retailers</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/2008-img.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2008</h3>
+          <p>Appeared on Frankfurter Neue Presse & launched our multi add-on frame link system.</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>2009</h3>
+          <p>We obtained our TUV/GS certificate for the entire product line.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/Grow_With_Me 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2011</h3>
+          <p>Launched our unique "Grow with me" Playhouse concept and partnered with more retailers such as Hornbach and Obi</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/image2 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2012</h3>
+          <p>Received MOMMY Award 2012 from Netmoms</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/Screenshot from 2020-09-28 15-07-13 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2013</h3>
+          <p>Launched Jungle Gym's online Playground Configurator</p>
+        </div>
+      </li>
+      <li>
+        <div class="time">
+          <img loading="lazy" class="timeline-img" src="./img/20150513_VogueUK-page-001 2.png" alt="Wooden tower with two swings in white background">
+        </div>
+        <div class="content">
+          <h3>2015</h3>
+          <p>Opened our B2C webshop and appeared in Vogue UK</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>2016</h3>
+          <p>Re-organized our European cross-selling infrastructure</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>2020</h3>
+          <p>Introduction of our state of the art 3D configurator</p>
+        </div>
+      </li>
+
+      <div style="clear:both;"></div>
+    </ul>
+  </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
